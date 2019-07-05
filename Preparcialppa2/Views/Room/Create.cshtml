@@ -1,0 +1,17 @@
+﻿@model  Preparcialppa2.Models.Room
+@{
+    Layout = null;
+}
+
+<form method="post" action="/room/create">
+    <label>Name</label>
+    <br />
+    <input type="text" id="Name" name="Name" />
+    <br />
+    <label>Location</label>
+    <br />
+    <input type="text" id="Location" name="Location" />
+
+    <br />
+    <button type="submit">Create Room</button>
+</form>

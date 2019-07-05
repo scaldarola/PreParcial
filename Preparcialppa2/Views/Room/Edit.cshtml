@@ -1,0 +1,19 @@
+﻿@model  Preparcialppa2.Models.Room
+@{
+    Layout = null;
+}
+
+<form method="post" action="/room/edit">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id"/>
+    <br />
+    <label>Name</label>
+    <br />
+    <input type="text" id="Name" name="Name"  value="@Model.Name"/>
+    <br />
+    <label>Location</label>
+    <br />
+    <input type="text" id="Location" name="Location"  value="@Model.Location"/>
+
+    <br />
+    <button type="submit">Save Changes</button>
+</form>

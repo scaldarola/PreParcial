@@ -1,0 +1,20 @@
+﻿@model  IEnumerable<Preparcialppa2.Models.Room>
+@{
+    Layout = null;
+}
+
+<h1>Index</h1>
+
+<span>@Html.ActionLink("Crear Room", "Create")</span>
+<br />
+<br />
+<br />
+
+
+@foreach (var item in Model)
+{
+    <span>@item.Id | @item.Name | @item.Location</span>
+    <span>@Html.ActionLink("Editar", "Edit", new { id = item.Id })</span>
+    <span>@Html.ActionLink("Borrar", "Delete", new { id = item.Id })</span>
+    <br />
+}
